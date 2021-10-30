@@ -26,7 +26,7 @@ export const getProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: actionTypes.GET_PRODUCT_DETAILS_REQUEST });
 
-    const { data } = await axios.get(`https://capstone-project-be.herokuapp.comapi/products/${id}`);
+    const { data } = await axios.get(`https://capstone-project-be.herokuapp.com/api/products/${id}`);
 
     dispatch({
       type: actionTypes.GET_PRODUCT_DETAILS_SUCCESS,
